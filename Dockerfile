@@ -8,4 +8,4 @@ WORKDIR /dotnetapp/DotnetTemplate.Web
 RUN apt-get update && apt-get install -y build-essential
 RUN npm install
 RUN npm run build
-CMD dotnet run
+CMD ["dotnet", "run"]
